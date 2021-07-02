@@ -1,0 +1,24 @@
+{
+    "QBUZZ_g300_1": {
+        "LineWheelchairAccessible": "ACCESSIBLE",
+        "TransportType": "BUS",
+        "DestinationName50": "Groningen",
+        "DataOwnerCode": "QBUZZ",
+        "DestinationCode": "329",
+        "LinePublicNumber": "300",
+        "LinePlanningNumber": "g300",
+        "LineName": "Emmen - Groningen",
+        "LineDirection": 1
+    },
+    "QBUZZ_g300_2": {
+        "LineWheelchairAccessible": "ACCESSIBLE",
+        "TransportType": "BUS",
+        "DestinationName50": "Emmen",
+        "DataOwnerCode": "QBUZZ",
+        "DestinationCode": "761",
+        "LinePublicNumber": "300",
+        "LinePlanningNumber": "g300",
+        "LineName": "Emmen - Groningen",
+        "LineDirection": 2
+    }
+}

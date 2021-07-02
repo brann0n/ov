@@ -1,7 +1,7 @@
-const express = require('express');
+import express from 'express';
 
-const IndexHandler = require('./api/index');
-const BusHandler = require('./api/bus');
+import IndexHandler from './api/index.js';
+import BusHandler from './api/bus.js';
 
 const app = express();
 const port = 8081;

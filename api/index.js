@@ -15,4 +15,4 @@ class IndexHandler {
     }
 }
 
-module.exports = IndexHandler;
+export default IndexHandler;

@@ -1,3 +1,5 @@
+import fs, { promises as fsp } from 'fs';
+
 class BusHandler {
     // api url: https://v0.ovapi.nl/line/ todo: do not request api for the large and mostly static requests like /line
     constructor(expressApp, routePrefix) {
@@ -48,8 +50,16 @@ class BusHandler {
             newArray.push({ 'key': key, 'value': value });
         }
 
-        res.end(JSON.stringify(newArray));
+        this.__privateCheckLineStorage().then((json) => {
+            res.end(json);
+        });     
+    }
+
+    async __privateCheckLineStorage(){
+        let response = await fsp.readFile("./data/linedata.json", "utf8");
+        console.log(response);
+        return response;
     }
 }
 
-module.exports = BusHandler;
+export default BusHandler;

@@ -1,5 +1,6 @@
 {
   "name": "ov",
+  "type":"module",
   "version": "1.0.0",
   "description": "Program thats gonna do stuff with the dutch public transit api",
   "main": "app.js",
