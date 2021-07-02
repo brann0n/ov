@@ -1,0 +1,23 @@
+{
+  "name": "ov",
+  "version": "1.0.0",
+  "description": "Program thats gonna do stuff with the dutch public transit api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brann0n/ov.git"
+  },
+  "author": "Brandon Abbenhuis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brann0n/ov/issues"
+  },
+  "homepage": "https://github.com/brann0n/ov#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
