@@ -10,7 +10,8 @@ const indexHandler = new IndexHandler(app, '/api');
 const busHandler = new BusHandler(app, '/api/bus');
 
 //define the routes for this app: the public folder contains all html code.
-app.use(express.static('public'))
+app.use(express.static('public'));
+app.use('/static', express.static('staticjs'));
 indexHandler.mapRoutes();
 busHandler.mapRoutes();
 

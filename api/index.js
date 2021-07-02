@@ -6,10 +6,11 @@ class IndexHandler {
     }
     
     mapRoutes(){
-        this.app.get(this.routePrefix + '', this.handleRequest);
+        this.app.get(this.routePrefix + '', (req, res) => this.handleRequest(req, res));
     }
 
     handleRequest(req, res){
+        console.log(this.routePrefix);
         res.send('Index Page');
     }
 }
